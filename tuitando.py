@@ -7,3 +7,8 @@
 # Saída
 #A saída é dada em uma única linha. Ela deve ser "TWEET" (sem as aspas) se a linha de texto T tem até 140 caracteres. Se T tem mais de 140 caracteres, a saída deve ser "MUTE".
 
+
+if len(input()) > 140:
+    print('MUTE')
+else:
+    print('TWEET')
