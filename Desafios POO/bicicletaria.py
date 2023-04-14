@@ -22,18 +22,14 @@ class Bicicleta:
     def correr(self):
         print("Vrummm...")
 
+def __str__(self):
+    return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
 
 b1 = Bicicleta("vermelha", "caloi", 2023, 600)
 b1.buzinar()
 b1.correr()
 b1.parar()
 print(b1.cor, b1.modelo, b1.ano, b1.valor)
-
-# def __str__(self):
-   # return f"Bicicleta: cor={self.cor}, modelo={self.modelo}, ano={self.ano}, valor={self.valor}"
-
-def __str__(self):
-    return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
 
 b2 = Bicicleta("verde", "monark", 2000, 189)
 print(b2)
